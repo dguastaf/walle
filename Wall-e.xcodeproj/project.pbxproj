@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A856D246653DB5DFFDD9FDC /* Pods_Wall_e.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9DB4BF6E83095EF6D16964 /* Pods_Wall_e.framework */; };
+		BC5C9AA51FD3B4DE009EB4D4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9AA41FD3B4DE009EB4D4 /* Device.swift */; };
+		BC5C9AAA1FD3B5A5009EB4D4 /* DeviceAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9AA91FD3B5A5009EB4D4 /* DeviceAction.swift */; };
+		BC5C9AAD1FD3B97F009EB4D4 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9AAC1FD3B97F009EB4D4 /* DeviceCell.swift */; };
+		BC5C9AB11FD3BB03009EB4D4 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9AB01FD3BB03009EB4D4 /* DeviceManager.swift */; };
 		BC82B6781F94411A0029E90E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82B6771F94411A0029E90E /* AppDelegate.swift */; };
-		BC82B67A1F94411A0029E90E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82B6791F94411A0029E90E /* ViewController.swift */; };
+		BC82B67A1F94411A0029E90E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82B6791F94411A0029E90E /* MainViewController.swift */; };
 		BC82B67D1F94411A0029E90E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC82B67B1F94411A0029E90E /* Main.storyboard */; };
 		BC82B67F1F94411A0029E90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC82B67E1F94411A0029E90E /* Assets.xcassets */; };
 		BC82B6821F94411A0029E90E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC82B6801F94411A0029E90E /* LaunchScreen.storyboard */; };
+		BCB8F2DC1FDBA9FC0002B92C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F2DB1FDBA9FC0002B92C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471A0BC1398CCE80C2722826 /* Pods-Wall-e.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wall-e.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wall-e/Pods-Wall-e.debug.xcconfig"; sourceTree = "<group>"; };
+		538B5B674FECFD99E01C788F /* Pods-Wall-e.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wall-e.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wall-e/Pods-Wall-e.release.xcconfig"; sourceTree = "<group>"; };
+		BC5C9AA41FD3B4DE009EB4D4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		BC5C9AA91FD3B5A5009EB4D4 /* DeviceAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAction.swift; sourceTree = "<group>"; };
+		BC5C9AAC1FD3B97F009EB4D4 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		BC5C9AB01FD3BB03009EB4D4 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		BC82B6741F94411A0029E90E /* Wall-e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wall-e.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC82B6771F94411A0029E90E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC82B6791F94411A0029E90E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC82B6791F94411A0029E90E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC82B67C1F94411A0029E90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC82B67E1F94411A0029E90E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC82B6811F94411A0029E90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC82B6831F94411A0029E90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB8F2DB1FDBA9FC0002B92C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF9DB4BF6E83095EF6D16964 /* Pods_Wall_e.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wall_e.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A856D246653DB5DFFDD9FDC /* Pods_Wall_e.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86D0FB0934016A717F86974D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				471A0BC1398CCE80C2722826 /* Pods-Wall-e.debug.xcconfig */,
+				538B5B674FECFD99E01C788F /* Pods-Wall-e.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B33D42C008D16804C31EEDB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9DB4BF6E83095EF6D16964 /* Pods_Wall_e.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC5C9AA31FD3B4CC009EB4D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC5C9AA41FD3B4DE009EB4D4 /* Device.swift */,
+				BC5C9AA91FD3B5A5009EB4D4 /* DeviceAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC5C9AAB1FD3B96A009EB4D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC5C9AAC1FD3B97F009EB4D4 /* DeviceCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC5C9AAE1FD3BAF1009EB4D4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BC5C9AB01FD3BB03009EB4D4 /* DeviceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		BC82B66B1F9441190029E90E = {
 			isa = PBXGroup;
 			children = (
 				BC82B6761F94411A0029E90E /* Wall-e */,
 				BC82B6751F94411A0029E90E /* Products */,
+				86D0FB0934016A717F86974D /* Pods */,
+				B33D42C008D16804C31EEDB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,26 @@
 		BC82B6761F94411A0029E90E /* Wall-e */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8F2DD1FDBAA0A0002B92C /* Util */,
+				BC5C9AAE1FD3BAF1009EB4D4 /* Managers */,
+				BC5C9AAB1FD3B96A009EB4D4 /* Views */,
 				BC82B6771F94411A0029E90E /* AppDelegate.swift */,
-				BC82B6791F94411A0029E90E /* ViewController.swift */,
+				BC82B6791F94411A0029E90E /* MainViewController.swift */,
+				BC5C9AA31FD3B4CC009EB4D4 /* Models */,
 				BC82B67B1F94411A0029E90E /* Main.storyboard */,
 				BC82B67E1F94411A0029E90E /* Assets.xcassets */,
 				BC82B6801F94411A0029E90E /* LaunchScreen.storyboard */,
 				BC82B6831F94411A0029E90E /* Info.plist */,
 			);
 			path = "Wall-e";
+			sourceTree = "<group>";
+		};
+		BCB8F2DD1FDBAA0A0002B92C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8F2DB1FDBA9FC0002B92C /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC82B6861F94411A0029E90E /* Build configuration list for PBXNativeTarget "Wall-e" */;
 			buildPhases = (
+				5656C7F7D0222B4146B65916 /* [CP] Check Pods Manifest.lock */,
 				BC82B6701F94411A0029E90E /* Sources */,
 				BC82B6711F94411A0029E90E /* Frameworks */,
 				BC82B6721F94411A0029E90E /* Resources */,
+				41F03C62671579887F9C18F2 /* [CP] Embed Pods Frameworks */,
+				1CCE89254DA5BB2B8AB29E8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +170,7 @@
 				TargetAttributes = {
 					BC82B6731F94411A0029E90E = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9XKX49QU6Y;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +206,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CCE89254DA5BB2B8AB29E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wall-e/Pods-Wall-e-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41F03C62671579887F9C18F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wall-e/Pods-Wall-e-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wall-e/Pods-Wall-e-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5656C7F7D0222B4146B65916 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wall-e-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC82B6701F94411A0029E90E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC82B67A1F94411A0029E90E /* ViewController.swift in Sources */,
+				BC5C9AA51FD3B4DE009EB4D4 /* Device.swift in Sources */,
+				BC5C9AB11FD3BB03009EB4D4 /* DeviceManager.swift in Sources */,
+				BC82B67A1F94411A0029E90E /* MainViewController.swift in Sources */,
 				BC82B6781F94411A0029E90E /* AppDelegate.swift in Sources */,
+				BCB8F2DC1FDBA9FC0002B92C /* Constants.swift in Sources */,
+				BC5C9AAD1FD3B97F009EB4D4 /* DeviceCell.swift in Sources */,
+				BC5C9AAA1FD3B5A5009EB4D4 /* DeviceAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +392,13 @@
 		};
 		BC82B6871F94411A0029E90E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471A0BC1398CCE80C2722826 /* Pods-Wall-e.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9XKX49QU6Y;
 				INFOPLIST_FILE = "Wall-e/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "boo.io.Wall-e";
+				PRODUCT_BUNDLE_IDENTIFIER = com.booio.walle.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,11 +406,13 @@
 		};
 		BC82B6881F94411A0029E90E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538B5B674FECFD99E01C788F /* Pods-Wall-e.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9XKX49QU6Y;
 				INFOPLIST_FILE = "Wall-e/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "boo.io.Wall-e";
+				PRODUCT_BUNDLE_IDENTIFIER = com.booio.walle.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +437,7 @@
 				BC82B6881F94411A0029E90E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
