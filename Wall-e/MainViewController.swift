@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class MainViewController: UITableViewController {
+class MainViewController: UITableViewController, DeviceCellDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DeviceManager.sharedInstance.devices.count
@@ -17,13 +17,21 @@ class MainViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let deviceCell = tableView.dequeueReusableCell(withIdentifier: "DeviceCell", for: indexPath) as! DeviceCell
-        deviceCell.setupWithDevice(DeviceManager.sharedInstance.devices[indexPath.row])
+        deviceCell.setupWithDevice(DeviceManager.sharedInstance.devices[indexPath.row], delegate: self)
         return deviceCell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func deviceActionTapped(cell: UITableViewCell, actionIndex: Int) {
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            print("MainViewController#deviceActionTapped - Error with finding indexPath for cell")
+            return
+        }
         
+        DeviceManager.sharedInstance.tappedDeviceAction(deviceIndex: indexPath.row,
+                                                        actionIndex: actionIndex)
     }
+    
+    
     
 //
 //    @IBAction func didTapOnTv(_ sender: Any) {

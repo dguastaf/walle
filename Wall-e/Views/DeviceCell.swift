@@ -10,39 +10,45 @@ import Foundation
 import UIKit
 
 class DeviceCell : UITableViewCell {
+    private let ActionImagesLeftMargin:CGFloat = 25
+    private let ActionImagesTopBottomPadding: CGFloat = 15
+    
     @IBOutlet weak var deviceImage: UIImageView!
     @IBOutlet weak var deviceActionsView: UIScrollView!
     
-    private let ActionImagesLeftMargin:CGFloat = 25
-    private let ActionImagesTopBottomPadding: CGFloat = 15
+    private weak var delegate: DeviceCellDelegate?
     
     override func prepareForReuse() {
         deviceImage.image = nil
     }
     
-    func setupWithDevice(_ device: Device) {
+    func setupWithDevice(_ device: Device, delegate: DeviceCellDelegate) {
+        self.delegate = delegate
         deviceImage.image = UIImage(named: device.imageName)
         
         var lastMargin: CGFloat = 0
         let height = deviceActionsView.frame.height - ActionImagesTopBottomPadding * 2
         
-        for deviceAction in device.actions {
+        for (i, deviceAction) in device.actions.enumerated() {
             let frame = CGRect(x: lastMargin + ActionImagesLeftMargin,
                                y: ActionImagesTopBottomPadding,
                                width: height,
                                height: height)
             lastMargin = frame.minX + frame.width
-            let imageView = UIImageView(image: UIImage(named: deviceAction.iconName))
-            imageView.frame = frame
-            imageView.contentMode = UIViewContentMode.scaleAspectFit
+            let button = DeviceActionButton(frame: frame, actionIndex: i)
+            button.addTarget(self, action: #selector(buttonActionTapped(_:)), for: .touchUpInside)
             
-            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.actionTapped(_:))))
-            
-            deviceActionsView.addSubview(imageView)
+            let image = UIImage(named: deviceAction.iconName)
+            button.setImage(image, for: .normal)
+            deviceActionsView.addSubview(button)
         }
     }
     
-    func actionTapped(_ sender: UITapGestureRecognizer) {
-        print("tapped")
+    func buttonActionTapped(_ sender: DeviceActionButton) {
+        delegate?.deviceActionTapped(cell: self, actionIndex: sender.actionIndex)
     }
+}
+
+protocol DeviceCellDelegate : class {
+    func deviceActionTapped(cell: UITableViewCell, actionIndex: Int)
 }

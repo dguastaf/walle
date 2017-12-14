@@ -18,6 +18,8 @@
 		BC82B67F1F94411A0029E90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC82B67E1F94411A0029E90E /* Assets.xcassets */; };
 		BC82B6821F94411A0029E90E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC82B6801F94411A0029E90E /* LaunchScreen.storyboard */; };
 		BCB8F2DC1FDBA9FC0002B92C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F2DB1FDBA9FC0002B92C /* Constants.swift */; };
+		BCEB8CDB1FE24AC50027B791 /* DeviceActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB8CDA1FE24AC50027B791 /* DeviceActionButton.swift */; };
+		BCEB8CDD1FE254FB0027B791 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB8CDC1FE254FB0027B791 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		BC82B6811F94411A0029E90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC82B6831F94411A0029E90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB8F2DB1FDBA9FC0002B92C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCEB8CDA1FE24AC50027B791 /* DeviceActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActionButton.swift; sourceTree = "<group>"; };
+		BCEB8CDC1FE254FB0027B791 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DF9DB4BF6E83095EF6D16964 /* Pods_Wall_e.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wall_e.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5C9AAC1FD3B97F009EB4D4 /* DeviceCell.swift */,
+				BCEB8CDA1FE24AC50027B791 /* DeviceActionButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5C9AB01FD3BB03009EB4D4 /* DeviceManager.swift */,
+				BCEB8CDC1FE254FB0027B791 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -265,11 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEB8CDD1FE254FB0027B791 /* NetworkManager.swift in Sources */,
 				BC5C9AA51FD3B4DE009EB4D4 /* Device.swift in Sources */,
 				BC5C9AB11FD3BB03009EB4D4 /* DeviceManager.swift in Sources */,
 				BC82B67A1F94411A0029E90E /* MainViewController.swift in Sources */,
 				BC82B6781F94411A0029E90E /* AppDelegate.swift in Sources */,
 				BCB8F2DC1FDBA9FC0002B92C /* Constants.swift in Sources */,
+				BCEB8CDB1FE24AC50027B791 /* DeviceActionButton.swift in Sources */,
 				BC5C9AAD1FD3B97F009EB4D4 /* DeviceCell.swift in Sources */,
 				BC5C9AAA1FD3B5A5009EB4D4 /* DeviceAction.swift in Sources */,
 			);

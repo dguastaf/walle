@@ -12,6 +12,17 @@ class DeviceManager {
     static let sharedInstance = DeviceManager()
     private(set) var devices = [Device]()
     
+    func tappedDeviceAction(deviceIndex: Int, actionIndex: Int) {
+        let device = devices[deviceIndex]
+        let deviceAction = device.actions[actionIndex]
+        
+        NetworkManager.sendAction(device: device, deviceAction: deviceAction)
+    }
+    
+    private func sendAction(device: Device, actionIndex: Int) {
+        
+    }
+    
     private init() {
         self.devices = [makeTv(), makeSoundbar()]
     }
